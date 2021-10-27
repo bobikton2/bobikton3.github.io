@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+header {
+  height: 55px;
+  width: 100%;
+  background: #CE852A;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  color: #fff;
+  z-index:2;
+}
+
+.open, .close {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.menu{
+  height: 100%;
+  width: 60%;
+  background: #CE852A;
+}
+
+.menu ul{
+  height: 100%;
+  width: 100%;
+  background: #CE852A;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu ul li{
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu ul li:hover{
+  background: rgba(0,0,0,0.3);
+}
+
+.menu ul li a{
+  color: #fff;
+}
+
+.submenu{
+  position: relative;
+}
+
+.submenu a{
+  padding-left: 5px;
+}
+
+.submenu i{
+  font-size: 1.2rem;
+}
+
+.submenu > ul{
+  height: 200px;
+  width: 100%;
+  background: #CE852A;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  transform: translateY(125px) scale(1, 0);
+  transform-origin: top;
+  transition: transform 0.2s linear .5s;
+}
+
+.submenu:hover > ul{
+  transform: translateY(125px) scale(1, 1);
+}
+
+.submenu > ul li{
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px){
+  .menu{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+ 
+  .open, .close {
+    display: block;
+    padding: 15px;
+    position: absolute;
+    transition: transform 0.5s linear;
+  }
+ 
+  .close{
+    display: none;
+  }
+ 
+  .menu{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    transform: translateY(125px) translateX(-100%);
+    transition: transform 0.5s linear;
+  }
+ 
+  .menu ul{
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+ 
+  .menu ul li{
+    height: 50px;
+    width: 100%;
+  }
+ 
+}
+
+.contenedor{
+    position: obsolute;
+    display: inline-block;
+    text-align: center;
+	right: 1%;
+}
+ 
+.left{
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+}
+.left2{
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+}
+.left3{
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+}
+.el_boton{
+    position: absolute;
+    top: 60%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+}
+
+.vodafone1234{
+    position: absolute;
+    display: inline-block;
+	top: 95%;
+	left: 30%;
+}
+	
+.vdf1{
+    position: absolute;
+    top: 110%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+}
+.vdf2{
+    position: absolute;
+    top: 115%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+}
+.vdf3{
+    position: absolute;
+    top: 120%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+}
+
+.vdf4{
+	position: absolute;
+	top: 110%;
+	left: 65%;
+	transform: translate(-50%, -50%);
+}
+
+.vdf5{
+	position: absolute;
+	top: 115%;
+	left: 65%;
+	transform: translate(-50%, -50%);
+}
+
+.vdf6{
+	position: absolute;
+	top: 120%;
+	left: 65%;
+	transform: translate(-50%, -50%);
+}
+
+.foto2{
+    position: absolute;
+	top: 90%;
+    display: inline-block;
+	left: 73%;
+}
+
+.vdf7{
+	position: absolute;
+	top: 155%;
+	left: 16%;
+	transform: translate(-50%, -50%);
+}
+
+.vdf8{
+	position: absolute;
+	top: 160%;
+	left: 16%;
+	transform: translate(-50%, -50%);
+}
+
+.vdf9{
+	position: absolute;
+	top: 165%;
+	left: 16%;
+	transform: translate(-50%, -50%);
+}
+
+.vdf10{
+	position: absolute;
+	top: 170%;
+	left: 16%;
+	transform: translate(-50%, -50%);
+}
+
+.foto3{
+    position: absolute;
+	top: 140%;
+    display: inline-block;
+	left: 30%;
+}
+
+.vdf11{
+	position: absolute;
+	top: 155%;
+	left: 65%;
+	transform: translate(-50%, -50%);
+}
+
+.vdf12{
+	position: absolute;
+	top: 160%;
+	left: 65%;
+	transform: translate(-50%, -50%);
+}
+
+.vdf13{
+	position: absolute;
+	top: 165%;
+	left: 65%;
+	transform: translate(-50%, -50%);
+}
+
+.vdf14{
+	position: absolute;
+	top: 170%;
+	left: 65%;
+	transform: translate(-50%, -50%);
+}
+
+.foto4{
+    position: absolute;
+	top: 142%;
+    display: inline-block;
+	left: 79%;
+}
+
+.foto5{
+    position: absolute;
+    display: inline-block;
+	top: 200%;
+	left: 0%;
+}
+
+.vdf15{
+	position: absolute;
+	top: 210%;
+	left: 10%;
+	transform: translate(-50%, -50%);
+}
+
+.vdf16{
+	position: absolute;
+	top: 220%;
+	left: 14%;
+	transform: translate(-50%, -50%);
+}
+
+.vdf17{
+	position: absolute;
+	top: 230%;
+	left: 22%;
+	transform: translate(-50%, -50%);
+}
+
+.video{
+	position: absolute;
+	top: 40%;
+	left: 70%;
+	transform: translate(-50%, -50%);
+	z-index:0;
+}
+
+.logo{
+	position: absolute;
+	top: 1%;
+	left: 3%;
+	width: 1%;
+	height: 1%;
+	transform: translate(-50%, -50%);
+	z-index:2;
+}
+
+.formulario1{
+	position: relative;
+	top: 160%;
+	
+	
+	
+	
+}
